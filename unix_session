@@ -1,0 +1,744 @@
+Script started on 2023-04-12 12:31:29+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# ls
+[?2004l[0m[01;32mcubane.pdb[0m  [01;32methane.pdb[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpentane.pdb[0m  [01;32mpropane.pdb[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# cd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# cd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# ls
+[?2004l[0m[34;42mexercise-data[0m  [01;32mmy_unix_session[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# cd -
+[?2004l/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# x[Kcd alkanes
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc *.pbd
+[?2004lwc: '*.pbd': No such file or directory
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc *.pbd[K[Kdb
+[?2004l  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l *.pdb > lengths.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# cat lengths.ta[Kxt
+[?2004l  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# sort -n lengths.txt
+[?2004l   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# sort -n lengths.txt \[K| hea d -n 1
+[?2004l   9 methane.pdb
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# sort -n lengths.txt | head -n 1[1P1[1P1[1P1
+[?2004lhead: cannot open '1' for reading: No such file or directory
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc *.pdb | sort -n | head  -n 3
+[?2004l   9   57  422 methane.pdb
+  12   84  622 ethane.pdb
+  15  111  825 propane.pdb
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# cd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# ls
+[?2004l[0m[34;42malkanes[0m  [34;42manimal-counts[0m  [34;42mbackup[0m  [34;42mcreatures[0m  [01;32mnumbers.txt[0m  [34;42mproject[0m  [34;42mwriting[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# cd animal-counts
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-countsroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-counts# ls'[K
+[?2004l[0m[01;32manimals.csv[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-countsroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-counts# [7mcut -d , -f 2 anima[27m[7ml[27m[7ms.csv[27m[A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-countsroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-counts# cut -d , -f 2 animals.csv | uniq
+[?2004ldeer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-countsroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-counts# cut -d , -f 2 animals.csv | uniq[K[K[K[K[K[K> sample.txt 
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-countsroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-counts# c[Kuniqw [K[K sample.txt
+[?2004ldeer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-countsroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/animal-counts# exit
+[?2004lexit
+
+Script done on 2023-04-12 14:58:56+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-04-13 10:53:32+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# cd exercise_data/creatures
+[?2004lbash: cd: exercise_data/creatures: No such file or directory
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# ls
+[?2004l[0m[34;42mexercise-data[0m  [01;32mmy_unix_session[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# lscd exercise_data/creatures[1Pdata/creatures-data/creatures
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# ec[K[Kls
+[?2004l[0m[01;32mbasilisk.dat[0m  [01;32mminotaur.dat[0m  [01;32municorn.dat[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# echo unicorn.dat 
+[?2004lunicorn.dat
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# echo unicorn.dat 
+[?2004lunicorn.dat
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# cat unicorn.dat 
+[?2004lCOMMON NAME: unicorn
+CLASSIFICATION: equus monoceros
+UPDATED: 1738-11-24
+AGCCGGGTCG
+CTTTACCTTA
+AAGCCGAGGG
+GGGTGGTACG
+CCGAACATAA
+ACGCTTTAAC
+GTCCCTCCAG
+GCTGATAATC
+GTTTAAGCAC
+ACGTGGTCTA
+GAGTTGCGCT
+TACCGGACAA
+ACCTGCGCGT
+TGAAAGGGTT
+ACGCCTGGTA
+CGAAATAAGA
+CGAACCCCAG
+GACCCAGCAG
+ACAAAGGAAC
+GTGCTAGGCC
+AGCCGGGTCG
+CTTTACCTTA
+AAGCCGAGGG
+GGGTGGTACG
+CCGAACATAA
+ACGCTTTAAC
+GTCCCTCCAG
+GCTGATAATC
+GTTTAAGCAC
+ACGTGGTCTA
+GAGTTGCGCT
+TACCGGACAA
+ACCTGCGCGT
+TGAAAGGGTT
+ACGCCTGGTA
+CGAAATAAGA
+CGAACCCCAG
+GACCCAGCAG
+ACAAAGGAAC
+GTGCTAGGCC
+CATATAATCA
+GGTAGATCGA
+TCTCTCTCCT
+AAGTTGTGGT
+CAAACAGGCG
+CGCGCTAGTT
+GGGTATGCCC
+GCCCAATAAC
+TGGTGGGGCC
+TGTGTGTAAA
+CTTCGATCAA
+TTTTGCAATT
+TATGTGCAGC
+TAACTGAATA
+TGTGATGTGT
+TGGAACCCGG
+ACTTCCTTTA
+CATTTCGCGC
+CCTAGTGTTT
+CAAGCGTCGC
+TGAGGTTATG
+ATTTATAGGA
+CACACTCAGC
+CGCGAACACA
+CAGTGTCATG
+ACTAAGTAGA
+ATCACCCATA
+TTCTCGTTAG
+TGCGATTGTA
+CCGCTTGAAC
+CTCGTATGCC
+TGGACCCGCT
+TCGATTTACA
+GCAATTCGAC
+TGGTGGTGAT
+TAACTTGAAG
+GATATGGTTT
+CGGTACCGAA
+AAGGGTCGCG
+CAAGTGTTCC
+CGGGACAATA
+GTTCTGCTAA
+GATAAGTATG
+TGCCGACTTA
+CCCGACCGTC
+TAGGTTATAA
+GGCACAACCG
+CTTCACTGTA
+GAGGTGTACA
+AGGATCCGTT
+GCGCGGGCGG
+CAGTCTATGT
+TTTTCGACAC
+TGGACTGCTT
+CCCTTTGAGG
+GTGGATTTTT
+CGTAACGGGT
+GAGTCCCTTG
+TGATTCCAGA
+CACGGGTTGC
+CGGGCGCTAC
+CCGCCGACGC
+CAGGCTTGGC
+AAGAGCGGTA
+TAAGGGCTCG
+CTACCACTTG
+TACTAGACTG
+ATTTGCGGAC
+GGTAGTAGCG
+CGGTGATCCC
+TATCATACGG
+GGTTTGGTGT
+ATGAGCCCTG
+CTGTCTTTTC
+TAGCGTACCA
+CAGATTGAAC
+TCCTCTTCTC
+GCGTTTCAGC
+GGTTAAAATT
+GCGATCCTCT
+CAGACCTTTG
+GTTGCCTTCG
+GTCCTTCCAC
+GCCTTCCTAT
+GATAGTAGCC
+TCACCTTCCA
+TCTCAAATCC
+CTCCCGCGAC
+CTTTGATTGT
+ACCGTTCAAG
+CCCTGACATA
+CCCACTCAAT
+ATTGACCCCT
+GCCGTATAGA
+CGTTGTCGGG
+ATAGCCAGAA
+CCAGTACTCT
+CTATCGGAAG
+CGTGACAGGC
+CCAAATACCT
+CGTTTAAAGC
+TGGACGCATC
+ACACTTGCTT
+GACTAACAGA
+GTGCTGGCCC
+GTGTTATTCA
+GCTAATGCAT
+CATGGGATCA
+GACGCCTGTA
+TATACAATTT
+TCAACTGCTC
+GAACTACTCG
+CCAAAACACT
+TTCGACTAGG
+CGATCGACCA
+AGAAAAGAGA
+CTGGACTGCT
+TACAGAGGTT
+TGAACTTTAC
+CGCGCCCACC
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# for filename in ls
+[?2004l[?2004h> echo filename
+[?2004lbash: syntax error near unexpected token `echo'
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# for filename in ls; echo filename[A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in ls
+[?2004l[?2004h> do
+[?2004l[?2004h> echo f
+[?2004l[?2004h> done
+[?2004lf
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# ls
+[?2004l[0m[01;32mbasilisk.dat[0m  [01;32mminotaur.dat[0m  [01;32municorn.dat[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# for file in basilisk.dat minotaur.dat 
+[?2004l[?2004h> do
+[?2004l[?2004h> echo filename
+[?2004l[?2004h> echo file
+[?2004l[?2004h> done
+[?2004lfilename
+file
+filename
+file
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# for file in basilisk.dat minotaur.dat ; do echo filename; echo file; done[1@$
+[?2004lfilename
+basilisk.dat
+filename
+minotaur.dat
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# ls
+[?2004l[0m[01;32mbasilisk.dat[0m  [01;32mminotaur.dat[0m  [01;32municorn.dat[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# ls basilisk.dat 
+[?2004l[0m[01;32mbasilisk.dat[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creaturesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/creatures# cd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# ls
+[?2004l[0m[34;42malkanes[0m  [34;42manimal-counts[0m  [34;42mbackup[0m  [34;42mcreatures[0m  [01;32mnumbers.txt[0m  [34;42mproject[0m  [34;42mwriting[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# cd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# ls
+[?2004l[0m[34;42mexercise-data[0m  [01;32mmy_unix_session[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# cd north-pacific-gyre
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# ls
+[?2004l[0m[01;32mNENE01729A.txt[0m  [01;32mNENE01751A.txt[0m  [01;32mNENE01843A.txt[0m  [01;32mNENE01978A.txt[0m  [01;32mNENE02040A.txt[0m  [01;32mNENE02043A.txt[0m  [01;32mgoostats.sh[0m
+[01;32mNENE01729B.txt[0m  [01;32mNENE01751B.txt[0m  [01;32mNENE01843B.txt[0m  [01;32mNENE01978B.txt[0m  [01;32mNENE02040B.txt[0m  [01;32mNENE02043B.txt[0m
+[01;32mNENE01736A.txt[0m  [01;32mNENE01812A.txt[0m  [01;32mNENE01971Z.txt[0m  [01;32mNENE02018B.txt[0m  [01;32mNENE02040Z.txt[0m  [01;32mgoodiff.sh[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# ec[K[Kcat [K[K[K[Kls 8Z[K[K*Z.txt
+[?2004l[0m[01;32mNENE01971Z.txt[0m  [01;32mNENE02040Z.txt[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# ls *Z.txt1Z.txt
+[?2004l[0m[01;32mNENE01971Z.txt[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# cat *1Z.txt
+[?2004l0.0618278658331
+7.58624853182
+2.3584281401
+2.59023630985
+1.63700034981
+0.369828482931
+1.20260030361
+0.116916208855
+1.73621570441
+0.0403725346637
+0.432520155311
+1.20941100772
+0.198518510869
+2.24005073874
+0.238036080411
+0.0965496836663
+4.22551343114
+0.398668299369
+3.59013690098
+1.42352602664
+1.16346627184
+0.65394599412
+0.67958209247
+2.10471601799
+2.05735118449
+0.237285574621
+0.0175481153075
+1.90815325673
+0.075152883326
+1.81926209582
+0.767415808624
+2.03673224669
+0.145347927573
+0.721270571048
+2.28995061698
+0.582651128075
+1.5731533263
+0.245481081646
+0.135152319792
+1.27572074707
+0.966110343676
+1.59157666209
+0.118339650368
+2.14816284148
+0.0653976737223
+0.840501139949
+1.31042430143
+0.274105314806
+1.38015600784
+2.14341620978
+0.433885839539
+0.538531860848
+0.15808094967
+0.238029706099
+0.0573506178721
+3.20800160559
+0.00287428326219
+0.556792892302
+0.195516255079
+0.657628498493
+2.72039090138
+0.084997698803
+0.746287652189
+2.23126533479
+3.66735881869
+0.206531957685
+0.0648472641157
+2.39050173355
+0.0393432669689
+0.39109442706
+1.2789692498
+0.443165314899
+0.861998775589
+0.319743117442
+1.58770162415
+0.18630010809
+1.30544040683
+1.07170396094
+0.187895699997
+0.230008166346
+0.255366426984
+3.05604083969
+1.10581393406
+0.182407550499
+1.56121870728
+1.57082977511
+0.044424659792
+1.40412826243
+0.484574704098
+0.281225772839
+0.465629353409
+1.78697677677
+2.12684946718
+0.411317772826
+0.03725555976
+0.233500596878
+0.257936524008
+0.15058307403
+0.25033592739
+0.526111057464
+0.02009844457
+0.605422263164
+0.645521963496
+2.93430514918
+0.0849452257619
+0.151393837278
+1.15176533804
+1.01722006764
+0.303737102231
+0.529228442462
+1.37259895019
+0.349660566806
+0.0521398253092
+1.66217861125
+1.90823933605
+0.698402566924
+1.62271819825
+1.25931801429
+1.54460067906
+0.673165226302
+1.20176804548
+0.0416240579257
+0.566818916832
+1.76934501
+0.298043455898
+0.265847757415
+0.369803358724
+0.490415796963
+2.03388735993
+0.0556076537162
+2.76891576604
+3.73133847757
+0.182798463079
+0.0966224267771
+0.75681353444
+0.707616676746
+0.38783677201
+1.70118551757
+1.82585396506
+1.13709093579
+0.285503608106
+2.49722420025
+1.879276448
+0.584585610469
+0.0165645295461
+0.00162514537226
+2.87545301381
+0.738854455385
+0.276341525199
+2.91065128056
+0.144762809053
+3.91186273022
+1.95518606309
+0.378930731609
+1.87670688046
+2.05738975574
+2.70480607634
+1.74671348402
+3.44453418273
+0.154440611076
+0.131943573325
+0.0991853893289
+0.901339603861
+0.505376610205
+0.256850191126
+0.685057032039
+0.554922732399
+0.2014750573
+0.145618765228
+0.540483673307
+0.722133263262
+0.576110478075
+1.15980479842
+0.396152836826
+0.0644604332762
+1.89274004178
+2.76222650624
+0.540941045448
+1.7626331702
+1.14967848827
+0.26539941236
+0.491195052597
+0.173667306175
+0.393144154921
+2.79013149243
+0.450076686864
+1.10915755306
+0.26477089449
+2.85599529957
+0.674868769316
+1.98654334565
+3.45049254302
+0.119070836084
+0.495689517285
+0.679874834348
+2.15179623281
+1.23781390308
+1.09683926417
+0.232646967283
+0.734930767435
+0.910777072011
+0.152498534009
+0.610243900232
+0.0811830076183
+1.11869011213
+11.0817628604
+1.14706257853
+0.737573803171
+0.24985159927
+3.2659584512
+0.166958293578
+1.22094860791
+1.56389735875
+3.14998456678
+1.30208827534
+1.01877041459
+0.18885757737
+0.268438109262
+0.239539762186
+1.26284177274
+1.06556452662
+1.79310153516
+1.18520116079
+1.81435068192
+1.85578593874
+0.355408049686
+0.399393398135
+0.488970328739
+1.47165216036
+0.22691080655
+0.0753795372062
+0.86011363952
+0.316134529282
+0.0554887781111
+0.762863634733
+0.0789747604294
+0.599223199804
+0.680838729822
+1.63447714509
+0.28606344934
+3.29576067557
+0.284255143045
+0.739065866229
+0.292201003521
+0.250143128039
+0.132598207225
+4.38296580859
+0.704263410029
+0.750718906289
+0.0113798428881
+0.140156979674
+0.425116339034
+0.837308411568
+0.6869154352
+0.163475549224
+2.15681715251
+0.289599272734
+1.15294769751
+0.254733537487
+3.56283185143
+0.875126261088
+0.707666431725
+0.040073148729
+0.895835461129
+0.849511990216
+1.23369696955
+0.027871023563
+0.218277163989
+0.461293426045
+0.249335332627
+0.16823485519
+2.06763882931
+0.296482035343
+0.274282997552
+1.32920270406
+1.08520186044
+0.322582615821
+2.54285034348
+0.338803665055
+0.520601252192
+1.63645324996
+0.0725978380275
+1.23385442872
+1.02145106927
+1.42137193861
+0.0922813793524
+1.67887244762
+0.847839492363
+1.68564848995
+0.300907263747
+0.341788087304
+2.66505971102
+3.58094071866
+2.21804529619
+0.0576959166799
+1.021146863
+0.086606067401
+2.17309615785
+2.37772417158
+0.134537111222
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# echo cat *1Z.txt
+[?2004lcat NENE01971Z.txt
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# ls
+[?2004l[0m[01;32mNENE01729A.txt[0m  [01;32mNENE01751A.txt[0m  [01;32mNENE01843A.txt[0m  [01;32mNENE01978A.txt[0m  [01;32mNENE02040A.txt[0m  [01;32mNENE02043A.txt[0m  [01;32mgoostats.sh[0m
+[01;32mNENE01729B.txt[0m  [01;32mNENE01751B.txt[0m  [01;32mNENE01843B.txt[0m  [01;32mNENE01978B.txt[0m  [01;32mNENE02040B.txt[0m  [01;32mNENE02043B.txt[0m
+[01;32mNENE01736A.txt[0m  [01;32mNENE01812A.txt[0m  [01;32mNENE01971Z.txt[0m  [01;32mNENE02018B.txt[0m  [01;32mNENE02040Z.txt[0m  [01;32mgoodiff.sh[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# ls ..
+[?2004l[0m[34;42mexercise-data[0m  [01;32mmy_unix_session[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# cd ../exercise-data
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# ls
+[?2004l[0m[34;42malkanes[0m  [34;42manimal-counts[0m  [34;42mbackup[0m  [34;42mcreatures[0m  [01;32mnumbers.txt[0m  [34;42mproject[0m  [34;42mwriting[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# cd alkanes
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# ls
+[?2004l[0m[01;32mcubane.pdb[0m  [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpentane.pdb[0m  [01;32mpropane.pdb[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# nano middle,[K.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                            middle.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[28d[K[1;69H(B[0;7m*[119G(B[m[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: middle.sh                                                                                           [28;30H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;34H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# cat middle.sh
+[?2004lhead -n 15 octane.pdb | tail -n 5
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# nano ba[K[Kmiddle.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                                            middle.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h5[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hp[?25l[28d[K[?12l[?25h[2;21H[?25l[?12l[?25hb[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2;21H[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[32m$[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;13H[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[2;14H[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: middle.sh                                                                                           [28;30H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;14H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# bash middle.sh octane.pdb 
+[?2004lATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# l[Kfor fi i[K[K[K[K[K[K[K[Kls
+[?2004l[0m[01;32mcubane.pdb[0m  [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmethane.pdb[0m  [01;32mmiddle.sh[0m  [01;32moctane.pdb[0m  [01;32mpentane.pdb[0m  [01;32mpropane.pdb[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# for f in ls
+[?2004l[?2004h> do [K
+[?2004l[?2004h> echo $f
+[?2004l[?2004h> done
+[?2004lls
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# for f in *.*
+[?2004l[?2004h> do [K
+[?2004l[?2004h> echo $f
+[?2004l[?2004h> done
+[?2004lcubane.pdb
+ethane.pdb
+lengths.txt
+methane.pdb
+middle.sh
+octane.pdb
+pentane.pdb
+propane.pdb
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l *
+[?2004l  20 cubane.pdb
+  12 ethane.pdb
+   7 lengths.txt
+   9 methane.pdb
+   1 middle.sh
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 115 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l * | sorr[Kt -n
+[?2004l   1 middle.sh
+   7 lengths.txt
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 115 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# cd ../..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# ls
+[?2004l[0m[34;42mexercise-data[0m  [01;32mmy_unix_session[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# cd north-pacific-gyre/
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# bash [K[K[K[K[Knano q1.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                              q1.sh                                                       [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;67H(B[0;7m*[119G(B[m[?12l[?25h[2df[?25l[?12l[?25ho[?25l[?12l[?25h[32mfor[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h f[?25l[?12l[?25h[32mfi[39m(B[m[?25l[?12l[?25hfil[?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h i[?25l[?12l[?25h[32min[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m[?25l[?12l[?25h*[?25l[?12l[?25h.[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$2[39m(B[m[?25l[3d[?12l[?25h[?25l[28d[K[?12l[?25h[3dd[?25l[?12l[?25h[32mdo[39m(B[m[?25l[4d[?12l[?25h[?25l[?12l[?25hw[?25l[?12l[?25hc[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -l[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$f[39m(B[m[?25l[?12l[?25h(B[0;1m[31mi[39m(B[m[?25l[?12l[?25h(B[0;1m[31ml[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[39m(B[m[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: q1.sh                                                                                               [28;26H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;67H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 3 lines ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[4;12H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# heasd[K[K[K[K[Kls
+[?2004l[0m[01;32mNENE01729A.txt[0m  [01;32mNENE01751A.txt[0m  [01;32mNENE01843A.txt[0m  [01;32mNENE01978A.txt[0m  [01;32mNENE02040A.txt[0m  [01;32mNENE02043A.txt[0m  [01;32mgoostats.sh[0m
+[01;32mNENE01729B.txt[0m  [01;32mNENE01751B.txt[0m  [01;32mNENE01843B.txt[0m  [01;32mNENE01978B.txt[0m  [01;32mNENE02040B.txt[0m  [01;32mNENE02043B.txt[0m  [01;32mq1.sh[0m
+[01;32mNENE01736A.txt[0m  [01;32mNENE01812A.txt[0m  [01;32mNENE01971Z.txt[0m  [01;32mNENE02018B.txt[0m  [01;32mNENE02040Z.txt[0m  [01;32mgoodiff.sh[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# cd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# ls
+[?2004l[0m[34;42mexercise-data[0m  [01;32mmy_unix_session[0m  [34;42mnorth-pacific-gyre[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# cd exercid[Kse-dara[K[Kta/alkanes
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# ls
+[?2004l[0m[01;32mcubane.pdb[0m  [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmethane.pdb[0m  [01;32mmiddle.sh[0m  [01;32moctane.pdb[0m  [01;32mpentane.pdb[0m  [01;32mpropane.pdb[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l cubane.pbd ethane.pdb 
+[?2004lwc: cubane.pbd: No such file or directory
+ 12 ethane.pdb
+ 12 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l cubane.pbd ethane.pdb [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ethane.pdb[1P [A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ethane.pdb [K[A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# [C[C[C[C[C[C[C[C[C[C[C[C[C[Cd ethane.pdb [A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb ethane.pdb [A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l  20 cubane.pdb
+  12 ethane.pdb
+  32 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l cubane.pdb ethane.pdb | sort -n 
+[?2004l  12 ethane.pdb
+  20 cubane.pdb
+  32 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l cubane.pdb ethane.pdb | sort -n | tail -n 2
+[?2004l  20 cubane.pdb
+  32 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l cubane.pdb ethane.pdb | sort -n | tail -n 2 | head -n 1
+[?2004l  20 cubane.pdb
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l cubane.pdb ethane.pdb | sort -n | tail -n 2 | head -n 1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-r
+[?2004l  32 total
+  20 cubane.pdb
+  12 ethane.pdb
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l cubane.pdb ethane.pdb | sort -n -r[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data# cd ..
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-dataroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data# north [K[K[K[K[K[Kcd north-pacific-gyre/
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# ls
+[?2004l[0m[01;32mNENE01729A.txt[0m  [01;32mNENE01751A.txt[0m  [01;32mNENE01843A.txt[0m  [01;32mNENE01978A.txt[0m  [01;32mNENE02040A.txt[0m  [01;32mNENE02043A.txt[0m  [01;32mgoostats.sh[0m
+[01;32mNENE01729B.txt[0m  [01;32mNENE01751B.txt[0m  [01;32mNENE01843B.txt[0m  [01;32mNENE01978B.txt[0m  [01;32mNENE02040B.txt[0m  [01;32mNENE02043B.txt[0m  [01;32mq1.sh[0m
+[01;32mNENE01736A.txt[0m  [01;32mNENE01812A.txt[0m  [01;32mNENE01971Z.txt[0m  [01;32mNENE02018B.txt[0m  [01;32mNENE02040Z.txt[0m  [01;32mgoodiff.sh[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# nano q1.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 3 lines ](B[m[H(B[0;7m  GNU nano 6.2                                              q1.sh                                                       [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[32mfor[39m(B[m file [32min[39m(B[m (B[0;1m[31m$1[39m(B[m*.(B[0;1m[31m$2[3d(B[0m[32mdo[4d[39m(B[mwc(B[0;1m[35m -l[39m(B[m (B[0;1m[31m$file[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[1;67H(B[0;7m*[119G(B[m[?12l[?25h[2dor[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25hn[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h1*.(B[0;1m[31m$2[39m(B[m[K[?25l[?12l[?25h*.(B[0;1m[31m$2[39m(B[m[K[?25l[?12l[?25h.(B[0;1m[31m$2[39m(B[m[K[?25l[?12l[?25h(B[0;1m[31m$2[39m(B[m[K[?25l[?12l[?25h2[K[?25l[?12l[?25h[K[?25l[2;28r[28;1H
+[1;30r[27;1H[K[2d[?12l[?25h[?25l[?12l[?25ho[K[?25l[?12l[?25h[K[?25l[2;28r[28;1H
+[1;30r[2;1H[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h-l[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h(B[0;1m[31m$file[39m(B[m[K[?25l[?12l[?25hfile[K[?25l[?12l[?25hile[K[?25l[?12l[?25hle[K[?25l[?12l[?25he[K[?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25hw[?25l[?12l[?25hc[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -l[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m[?25l[?12l[?25h*[?25l[?12l[?25h.[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$2[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m|[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h s[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25h(B[0;1m[34msort[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m|[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h h[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25h(B[0;1m[34mhead[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 1[?25l[?12l[?25h1[?25l[?12l[?25h [?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: q1.sh                                                                                               [28;26H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;67H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;35H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# bash q1.sh ../exercise-data/ alkanes/ pdb
+[?2004l   9 ../exercise-data/alkanes/methane.pdb
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyreroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/north-pacific-gyre# cd ../exercise-data/alkanes
+[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# ls
+[?2004l[0m[01;32mcubane.pdb[0m  [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmethane.pdb[0m  [01;32mmiddle.sh[0m  [01;32moctane.pdb[0m  [01;32mpentane.pdb[0m  [01;32mpropane.pdb[0m
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l *
+[?2004l  20 cubane.pdb
+  12 ethane.pdb
+   7 lengths.txt
+   9 methane.pdb
+   1 middle.sh
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 115 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l * /[K| srt -n
+[?2004lCommand 'srt' not found, but can be installed with:
+apt install python3-pysrt
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# wc -l * | srt -n[1@o
+[?2004l   1 middle.sh
+   7 lengths.txt
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 115 total
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# nano ../../north-pacific-gyre/q1.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 6.2                                 ../../north-pacific-gyre/q1.sh                                           [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2dwc(B[0;1m[35m -l[39m(B[m (B[0;1m[31m$1[39m(B[m*.(B[0;1m[31m$2[39m(B[m [32m|[39m(B[m (B[0;1m[34msort[35m -n[39m(B[m [32m|[39m(B[m (B[0;1m[34mhead[35m -n[39m(B[m 1[?12l[?25h[?25l[?12l[?25hw[?25l[?12l[?25hc[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h*[?25l[?12l[?25h.[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[28d[K[?12l[?25h[2;21H[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h1[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;79H(B[0;7m*[119G(B[m[?12l[?25h[2;26Hthead(B[0;1m[35m -n[39m(B[m 1[2;27H[?25l[?12l[?25hahead(B[0;1m[35m -n[39m(B[m 1[2;28H[?25l[?12l[?25hihead(B[0;1m[35m -n[39m(B[m 1[2;29H[?25l[?12l[?25hlhead(B[0;1m[35m -n[39m(B[m 1[2;30H[?25l[?12l[?25h(B[0;1m[34mtail[39m(B[m (B[0;1m[34mhead[35m -n[39m(B[m 1[2;31H[?25l[?12l[?25h-(B[0;1m[34mhead[35m -n[39m(B[m 1[2;32H[?25l[?12l[?25hnhead(B[0;1m[35m -n[39m(B[m 1[2;33H[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m (B[0;1m[34mhead[35m -n[39m(B[m 1[2;34H[?25l[?12l[?25h2head(B[0;1m[35m -n[39m(B[m 1[2;35H[?25l[?12l[?25h (B[0;1m[34mhead[35m -n[39m(B[m 1[2;36H[?25l[?12l[?25h[32m|(B[0;1m[34mhead[35m -n[39m(B[m 1[2;37H[?25l[?12l[?25h (B[0;1m[34mhead[35m -n[39m(B[m 1[2;38H[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: ../../north-pacific-gyre/q1.sh                                                                      [28;51H(B[m[?12l[?25h[?25l  [1K (B[0;7m[ Writing... ](B[m[K[1;79H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;38H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# nano ../../north-pacific-gyre/q1.sh[A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# [8Pwc -l * | sort -n
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[Kls[Kcd ../exercise-data/alkanes[A]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# bash q1.sh ../exercise-data/alkanes/ pdb
+[?2004lbash: q1.sh: No such file or directory
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# cd exit
+[?2004lbash: cd: exit: No such file or directory
+[?2004h]0;root@TIGER01654: /mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanesroot@TIGER01654:/mnt/c/Users/harsha.srinivasa/Desktop/shell-lesson-data/exercise-data/alkanes# exit
+[?2004lexit
+
+Script done on 2023-04-13 12:47:04+05:30 [COMMAND_EXIT_CODE="1"]
